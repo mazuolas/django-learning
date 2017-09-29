@@ -12,4 +12,4 @@ class Question(models.Model):
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length = 200)
-    tally = models.IntagerField(default=0)
+    tally = models.IntegerField(default=0)
